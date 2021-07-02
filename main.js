@@ -1183,3 +1183,31 @@ window.fbAsyncInit = function() {
   }
   
 });
+
+
+
+// -----------------
+// https://www.analyticsmania.com/post/datalayer-push/
+// -----------------
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+ 'event': 'new_subscriber',
+ 'formLocation': 'footer'
+});
+
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+ 'transactionProducts': [{
+ 'sku': 'DD44',
+ 'name': 'T-Shirt',
+ 'category': 'Apparel',
+ 'price': 11.99,
+ 'quantity': 1
+ },{
+ 'sku': 'AA1243544',
+ 'name': 'Socks',
+ 'category': 'Apparel',
+ 'price': 9.99,
+ 'quantity': 2
+ }]
+});
